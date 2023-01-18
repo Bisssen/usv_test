@@ -1,0 +1,22 @@
+# Ignore pyc files
+__pycache__
+
+# Ignore the test script
+test.py
+test2.py
+
+# Ignore all zip files
+*.zip
+
+# Ignore all exe files
+*.exe
+
+# Ignore all log files
+*.log
+
+
+# Just trying to get it to ignore the stuff it should
+*.pickle
+*.config
+*.txt
+*.json
