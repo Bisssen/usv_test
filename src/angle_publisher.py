@@ -6,8 +6,8 @@ class angle_publisher():
         self.parent = parent
         self.side = side
         
-        self.first_name_part = ''
-        self.last_name_part = ''
+        self.first_name_part = '/workshop_setup/pod_steer/'
+        self.last_name_part = '_steer'
 
         self.msg = Float32()
         self.create_publisher()
@@ -18,7 +18,7 @@ class angle_publisher():
         self.pub = rospy.Publisher(publisher_name, Float32, queue_size=10)
 
 
-    def set_trust(self, angle):
+    def set_angle(self, angle):
         '''
         
         '''

@@ -6,7 +6,7 @@ class trust_publisher():
         self.parent = parent
         self.side = side
         
-        self.first_name_part = ''
+        self.first_name_part = '/workshop_setup/pods/'
         self.last_name_part = ''
 
         self.msg = Int16()
@@ -15,7 +15,8 @@ class trust_publisher():
     def create_publisher(self):
         publisher_name = self.first_name_part + self.side + self.last_name_part
 
-        self.pub = rospy.Publisher(publisher_name, Int16, queue_size=10)
+        self.pub = rospy.Publisher(publisher_name,
+                                   Int16, queue_size=10)
 
 
     def set_trust(self, trust):
